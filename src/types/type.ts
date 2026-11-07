@@ -8,6 +8,7 @@ export interface ICategory {
 export interface IProduct {
   id: number;
   categoryIcon: string;
+  image: string;
   nameBn: string;
   today: number;
   unit: string;

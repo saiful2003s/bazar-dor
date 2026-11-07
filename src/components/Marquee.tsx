@@ -29,7 +29,7 @@ const PriceTicker = async () => {
                     >
                         {/* Product Icon */}
                         <span className="text-xl">
-                            {product.categoryIcon}
+                            {product.image}
                         </span>
 
                         {/* Product Name */}
