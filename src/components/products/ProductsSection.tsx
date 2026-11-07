@@ -77,7 +77,7 @@ const ProductSections = async () => {
             )}
 
             {/* Section C */}
-            <section id="সব-পণ্য" className="scroll-mt-24">
+            <section id="all-products" className="scroll-mt-24">
                 <div className="mb-6">
                     <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
                         সব পণ্য

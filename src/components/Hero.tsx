@@ -30,7 +30,7 @@ const Hero = () => {
 
                     {/* CTA Button */}
                     <Link
-                        href="#সব-পণ্য"
+                        href="#all-products"
                         className="inline-block rounded-xl bg-green-600 px-7 py-3 font-semibold text-white transition hover:bg-green-700"
                     >
                         সব পণ্য দেখুন →
