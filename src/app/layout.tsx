@@ -1,20 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "../components/Footer";
 import { Suspense } from "react";
 import HeaderPage from "../components/Header";
 import NavbarPage from "../components/Navbar";
+import { Hind_Siliguri } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const hindSiliguri = Hind_Siliguri({
+  subsets: ["bengali"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-hind-siliguri",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,12 +23,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       data-theme="light"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={` h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
-        <HeaderPage />
-        <NavbarPage/>
-        <Suspense>
+      <body className={`min-h-full flex flex-col ${hindSiliguri.variable}`}>
+        <Suspense fallback={<div>Loading...</div>}>
+          <HeaderPage />
+          <NavbarPage />
           {children}
         </Suspense>
         <Footer/>
