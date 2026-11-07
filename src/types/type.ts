@@ -5,3 +5,13 @@ export interface ICategory {
   icon: string;
 }
 
+export interface IProduct {
+  id: number;
+  categoryIcon: string;
+  nameBn: string;
+  today: number;
+  unit: string;
+  change: {
+    pct: number;
+  };
+}

@@ -2,13 +2,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import LiveDate from "./LiveDate";
 
 
 const HeaderPage = () => {
-  const date = new Date().toLocaleDateString("bn-BD",{
-    dateStyle: "full",
-    timeZone: "Asia/Dhaka",
-  })
 
   return (
     <header className="bg-white shadow-sm border-b border-gray-100">
@@ -32,7 +29,7 @@ const HeaderPage = () => {
             </h2>
 
             <p className="text-xs sm:text-sm mt-0.5">
-              {date || "তারিখ লোড হচ্ছে..."}
+              <LiveDate />
             </p>
           </div>
         </Link>

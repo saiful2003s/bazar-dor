@@ -5,6 +5,7 @@ import { Suspense } from "react";
 import HeaderPage from "../components/Header";
 import NavbarPage from "../components/Navbar";
 import { Hind_Siliguri } from "next/font/google";
+import Marquee from "@/components/Marquee";
 
 const hindSiliguri = Hind_Siliguri({
   subsets: ["bengali"],
@@ -25,10 +26,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       data-theme="light"
       className={` h-full antialiased`}
     >
-      <body className={`min-h-full flex flex-col ${hindSiliguri.variable}`}>
+      <body className={` ${hindSiliguri.variable}`}>
         <Suspense fallback={<div>Loading...</div>}>
           <HeaderPage />
           <NavbarPage />
+          <Marquee />
           {children}
         </Suspense>
         <Footer/>
