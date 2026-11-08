@@ -37,14 +37,14 @@ const HeaderPage = () => {
         {/* Authentication Buttons */}
         <div className="flex items-center gap-2 sm:gap-4">
           <Link
-            href="/signin"
+            href="/sign-in"
             className="text-gray-700 hover:text-green-600 transition-colors font-semibold text-sm sm:text-base px-2 sm:px-3 py-2"
           >
             সাইন ইন
           </Link>
 
           <Link
-            href="/signup"
+            href="/sign-up"
             className="bg-green-600 text-white px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg hover:bg-green-700 transition-all font-semibold text-sm sm:text-base shadow-sm hover:shadow-md"
           >
             সাইন আপ

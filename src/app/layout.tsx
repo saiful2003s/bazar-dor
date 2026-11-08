@@ -6,6 +6,7 @@ import HeaderPage from "../components/Header";
 import NavbarPage from "../components/Navbar";
 import { Hind_Siliguri } from "next/font/google";
 import Marquee from "@/components/Marquee";
+import { Toaster } from "react-hot-toast";
 
 const hindSiliguri = Hind_Siliguri({
   subsets: ["bengali"],
@@ -33,7 +34,20 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <Marquee />
           {children}
         </Suspense>
-        <Footer/>
+        <Footer />
+
+        <Toaster
+          position="top-center"
+          reverseOrder={false}
+          toastOptions={{
+            duration: 3000,
+            style: {
+              borderRadius: "12px",
+              background: "#333",
+              color: "#fff",
+            },
+          }}
+        />
       </body>
     </html>
   );
