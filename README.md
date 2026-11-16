@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# 🛒 বাজার দর (BazarDor)
 
-First, run the development server:
+### Know Today's Market Price, Shop Smarter!
+
+## 📌 Project Description
+
+BazarDor is a modern and responsive web application that helps users check daily market prices of essential products across different markets in Bangladesh. Users can explore products, compare prices between markets, view price changes, and make better shopping decisions.
+
+The platform provides an easy-to-use interface with authentication and detailed product information to make market price checking simple and convenient.
+
+## 🛠️ Technologies Used
+
+- **Next.js** – React Framework (App Router)
+- **React** – User Interface Development
+- **TypeScript** – Type Safety
+- **Tailwind CSS** – Styling and Responsive Design
+- **DaisyUI** – UI Components
+- **Better Auth** – User Authentication
+- **MongoDB** – Database
+- **React Hot Toast** – Notifications
+- **Programming Hero BazarDor API** – Product and Market Data
+- **Vercel** – Deployment
+
+## ✨ Key Features
+
+1. **Daily Market Price:** Browse daily prices of essential products in Bangladesh.
+
+2. **Category-wise Products:** Explore products by different categories such as vegetables, rice, fish, and more.
+
+3. **Market Price Comparison:** Compare minimum, maximum, and average product prices across different markets.
+
+4. **User Authentication:** Secure Sign Up and Sign In functionality using Better Auth and MongoDB.
+
+5. **Protected Product Details:** Logged-in users can access detailed product information, price summaries, and market-wise price comparisons.
+
+## 🚀 Getting Started
+
+### Clone the Repository
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+### Navigate to Project Directory
+
+```bash
+cd bazar-dor
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Environment Variables
+
+Create a `.env.local` file in the root directory and configure the following variables:
+
+```env
+BETTER_AUTH_SECRET=your_secret_key
+BETTER_AUTH_URL=http://localhost:3000
+MONGODB_URL=your_mongodb_connection_string
+```
+
+### Run the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 👨‍💻 Developer
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Saiful Islam**
 
-## Learn More
+- GitHub: [saiful2003s](https://github.com/saiful2003s)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+⭐ If you find this project useful, feel free to explore the repository!

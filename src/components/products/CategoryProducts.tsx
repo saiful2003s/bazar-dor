@@ -60,11 +60,11 @@ const CategoryProducts = ({
                         </option>
 
                         <option value="low-to-high">
-                            দাম: কম থেকে বেশি
+                             কম থেকে বেশি
                         </option>
 
                         <option value="high-to-low">
-                            দাম: বেশি থেকে কম
+                            বেশি থেকে কম
                         </option>
                     </select>
 

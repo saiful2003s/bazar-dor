@@ -16,7 +16,7 @@ const SignInForm = () => {
     const [socialLoading, setSocialLoading] = useState("");
 
     const handleSignIn = async (
-        e: React.FormEvent<HTMLFormElement>
+        e: React.SyntheticEvent<HTMLFormElement>
     ) => {
         e.preventDefault();
 
