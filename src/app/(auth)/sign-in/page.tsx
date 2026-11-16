@@ -1,5 +1,5 @@
 
-import SignInForm from "@/app/sign-in/SignInForm";
+import SignInForm from "@/app/(auth)/sign-in/SignInForm";
 
 const SignInPage = () => {
     return (

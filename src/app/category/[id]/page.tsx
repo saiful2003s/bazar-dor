@@ -2,6 +2,7 @@
 import { ICategory, IProduct } from "@/types/type";
 import CategoryProducts from "@/components/products/CategoryProducts";
 import Link from "next/link";
+import notFound from "@/app/not-found";
 
 interface CategoryPageProps {
     params: Promise<{
@@ -25,10 +26,14 @@ const CategoryPage = async ({
     );
 
     if (!categoryRes.ok) {
-        throw new Error("Categories fetch failed");
+        notFound();
     }
 
     const categoryJson = await categoryRes.json();
+
+    if (!categoryJson.data) {
+        notFound();
+    }
 
     const categories: ICategory[] = Array.isArray(categoryJson)
         ? categoryJson
